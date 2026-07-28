@@ -1,0 +1,302 @@
+/* ==========================
+   Google Font
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1120;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* ==========================
+   Header
+========================== */
+
+header{
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background:#111827;
+    z-index:1000;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ==========================
+   Common
+========================== */
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+    color:#38bdf8;
+}
+
+/* ==========================
+   Home
+========================== */
+
+.home{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.home-text{
+    flex:1;
+}
+
+.home-text h3{
+    color:#94a3b8;
+    font-size:22px;
+}
+
+.home-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.home-text h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.home-text p{
+    color:#cbd5e1;
+    max-width:550px;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn,
+.btn2{
+    display:inline-block;
+    padding:12px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-right:15px;
+    font-weight:600;
+}
+
+.btn{
+    background:#38bdf8;
+    color:white;
+}
+
+.btn2{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.home-image{
+    flex:1;
+    text-align:center;
+}
+
+.home-image img{
+    width:340px;
+    border-radius:50%;
+    border:6px solid #38bdf8;
+}
+
+/* ==========================
+   About
+========================== */
+
+.about-card{
+    background:#111827;
+    padding:40px;
+    border-radius:15px;
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#cbd5e1;
+}
+
+/* ==========================
+   Skills
+========================== */
+
+.skill-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-box{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.skill-box:hover{
+    border-color:#38bdf8;
+    color:#38bdf8;
+}
+
+/* ==========================
+   Projects
+========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#111827;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.project-card h3{
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.project-card a{
+    text-decoration:none;
+    color:#38bdf8;
+    font-weight:600;
+}
+
+/* ==========================
+   Education
+========================== */
+
+.education-box{
+    background:#111827;
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    padding:35px;
+    border-radius:15px;
+}
+
+/* ==========================
+   Contact
+========================== */
+
+.contact-box{
+    max-width:650px;
+    margin:auto;
+    background:#111827;
+    padding:35px;
+    border-radius:15px;
+}
+
+.contact-box p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.contact-box i{
+    color:#38bdf8;
+    width:30px;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:0 10px;
+}
+
+.home{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.home-text h1{
+    font-size:45px;
+}
+
+.home-image img{
+    width:250px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+section{
+    padding:90px 6%;
+}
+
+}
